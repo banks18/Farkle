@@ -7,10 +7,12 @@
     android:orientation="horizontal"
     android:background="#000000">
 
-    <Space
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/farkle_title"
+        android:layout_weight=".5" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -34,7 +36,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/playerOneImage"
                     android:layout_weight="1.5"
-                    android:src="@mipmap/boy_avatar" />
+                    android:src="@drawable/avatar_boy1" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -83,7 +85,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/playerTwoImage"
                     android:layout_weight="1.5"
-                    android:src="@mipmap/avatar_dog" />
+                    android:src="@drawable/avatar_puppy" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -154,18 +156,24 @@
                 <ImageButton
                     android:layout_width="202dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButton"
-                    android:src="@mipmap/five_die"
+                    android:id="@+id/dieOne"
+                    android:src="@drawable/five_die"
                     android:background="#ff000000"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:longClickable="true"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:paddingBottom="50dp"/>
 
                 <ImageButton
                     android:layout_width="202dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButton2"
+                    android:id="@+id/dieTwo"
                     android:layout_weight="1"
                     android:background="#000000"
-                    android:src="@mipmap/two_die" />
+                    android:src="@drawable/two_die"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
             </LinearLayout>
 
             <LinearLayout
@@ -177,18 +185,23 @@
                 <ImageButton
                     android:layout_width="202dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButton3"
+                    android:id="@+id/dieThree"
                     android:layout_weight="1"
-                    android:src="@mipmap/one_die"
-                    android:background="#ff000000" />
+                    android:src="@drawable/one_die"
+                    android:background="#ff000000"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:paddingBottom="50dp"/>
 
                 <ImageButton
                     android:layout_width="202dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButton4"
+                    android:id="@+id/dieFour"
                     android:layout_weight="1"
-                    android:src="@mipmap/four_die"
-                    android:background="#ff000000" />
+                    android:src="@drawable/four_die"
+                    android:background="#ff000000"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
             </LinearLayout>
 
             <LinearLayout
@@ -200,25 +213,32 @@
                 <ImageButton
                     android:layout_width="202dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButton5"
+                    android:id="@+id/dieFive"
                     android:layout_weight="1"
-                    android:src="@mipmap/three_die"
-                    android:background="#000000" />
+                    android:src="@drawable/three_die"
+                    android:background="#000000"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:paddingBottom="50dp"/>
 
                 <ImageButton
                     android:layout_width="202dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageButton6"
+                    android:id="@+id/dieSix"
                     android:layout_weight="1"
                     android:background="#ff000000"
-                    android:src="@mipmap/six_die" />
+                    android:src="@drawable/six_die"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
-    <Space
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_weight=".5"
+        android:src="@drawable/farkle_title" />
 
 </LinearLayout>
