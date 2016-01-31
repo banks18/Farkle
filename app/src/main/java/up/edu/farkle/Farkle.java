@@ -204,7 +204,7 @@ public class Farkle extends Activity implements View.OnClickListener {
 
     /*
         rollDice
-        This method randomly sets values for each of the dice
+        This method randomly sets values for each of the dice.
      */
     public void rollDice() {
         for(int i = 0; i < 6; i++) {
